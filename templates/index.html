@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>ASCII-ART-WEB</title>  
+   <style>
+    html {
+
+    height: 100%;
+
+    }
+    h1 {
+        background-color: rgba(253, 253, 253, 0.89); 
+        font-size: 300%;
+       
+       
+       
+        text-align: center;
+       
+        
+    }
+    body {
+        background-color: rgba(237, 238, 200, 0.89);
+        width: 100%;
+        height:45%;
+        color: rgb(2, 2, 1);
+        display: block;
+        padding-top: 2%;
+        margin: 0%;
+        text-align: center;
+        font-family: "Cutive Mono", monospace;
+    }
+    form {
+        height: 20%;
+        
+    }
+  
+    pre {   
+            text-align:left;
+            background-color:white ;
+            overflow: scroll;
+            font-family:monospace; 
+            width: 100%;
+            height:100%;
+            display: block;    
+    }
+    .input {
+        border-radius: 8px;
+        height:30px;
+        width: 300px;
+        padding:2px;
+        border:2px solid #000;
+    }
+    .font {
+        border-radius: 10%;
+        margin:2px;
+        height:20px;
+        width: 100px;
+        border:2px solid #000;
+        border-radius: 8px;
+    }
+    
+    
+   </style>  
+</head>
+<body>
+    
+ <h1 >ASCII-ART-WEB</h1>
+<form method="POST" class="form">
+
+
+    <div class="form_group">    
+
+    <input type="text" class="input" placeholder="Type something" name="text">
+     
+    </div>
+ 
+    <div class="form_group">
+    <select class="font" name="fonts" >
+       
+    <option value="standard">standard</option>
+    <option value="shadow">shadow</option>
+    <option value="thinkertoy">thinkertoy</option>
+    </select>
+    </div>
+
+    
+    <button class="font">submit</button>
+    
+    
+ </form>
+
+ 
+ 
+
+</body>
+<pre>{{ . }}</pre>
+
+</html>
