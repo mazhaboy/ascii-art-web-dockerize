@@ -15,7 +15,7 @@ func main() {
 
 	templates = template.Must(template.ParseGlob("templates/*.html"))
 	http.HandleFunc("/", posthandler)
-	fmt.Println("listining port:7777")
+	fmt.Println("listening port:7777")
 	http.ListenAndServe(":7777", nil)
 
 }
